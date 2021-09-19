@@ -1,0 +1,127 @@
+/* Importar fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.body{
+    background-color: #F2F2F2;
+}
+
+/* header */
+
+.header{
+    
+    position: absolute;
+    display: flex;
+    /* background-color: aqua; */
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.enc{
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 400px;
+    background: #404040;
+    color: #F2F2F2;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+    
+}
+
+.buttom{
+
+    position: relative;
+    display: flex;
+    /* background-color:#D9D9D9 ; */
+    height: 80px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px ;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.buttom button{
+    background: #404040;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.buttom a{
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+
+
+/* Form */
+
+.form{
+    padding-top: 10px;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.form input{
+    width: 360px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.form p{
+
+    padding-top: 10px;
+}
+.form button{
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background: #404040;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    color: #F2F2F2;
+
+}
+
+.form div{
+    position: relative;
+    display: flex;
+    justify-content: center;   
+}
+
+/* Regresar */
+
+.home{
+    margin: 10px;
+    background: #404040;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    color: #F2F2F2; 
+}
+
+.home a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
