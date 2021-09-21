@@ -37,4 +37,21 @@ module.exports = checkApellido(apellido);
 /*....... JUAN F ...... */ 
 
 
+function JScheckCorreo(_email) {
+
+    //Acceder al dato dentro de la variable
+    _email = _email.value; 
+
+    // NombreVariable.Length = Devuelve la cantidad de caracteres
+    // NombreVariable.test(NombreVariable2) = Analiza si los datos en NombreVariable2 se encuentran en NombreVariable1
+    if (_email.length < 4 || _email.length >30 || regex.test(_email) || _email == ""){
+        return false;
+    }else{
+        return true; 
+    }
+    
+}
+module.exports = checkCorreo;
+
+
 /*.......  ALEX  ...... */ 
