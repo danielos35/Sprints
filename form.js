@@ -62,3 +62,4 @@ function checkTelefono(telefono)
 
 /*.......  ALEX  ...... */ 
 //Prueba de entrenamiento en Github
+//prueba 2
