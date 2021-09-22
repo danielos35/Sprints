@@ -37,7 +37,25 @@ function checkApellido(name){
 module.exports = checkApellido(apellido);
 
 /*....... DAVID  ...... */ 
-
+// Función que recibe como argumento el telefono
+function checkTelefono(telefono)
+   {
+         //valores numericos aceptados
+   	  var valoresok = /^[0-9]+$/;
+        //compara el contenido de telefono y su longitud
+   	  if (telefono.value.match(valoresok) && telefono.value.length === 7 ) 
+   	  {
+   	  	alert("Gracias por registrarte");
+	   	return true;
+	     }
+   	  else
+   	  {
+   	  	alert("Introduzca un número válido");
+   	  	return false;
+   	  }
+   }
+   //exporta la función
+   module.exports = checkTelefono;
 
 /*....... JUAN F ...... */ 
 // prueba
