@@ -37,21 +37,17 @@ module.exports = checkApellido(apellido);
 /*....... JUAN F ...... */ 
 
 
-function JScheckCorreo(_email) {
+let correo = document.getElementById("Correo");
 
-    //Acceder al dato dentro de la variable
-    _email = _email.value; 
-
-    // NombreVariable.Length = Devuelve la cantidad de caracteres
-    // NombreVariable.test(NombreVariable2) = Analiza si los datos en NombreVariable2 se encuentran en NombreVariable1
-    if (_email.length < 4 || _email.length >30 || regex.test(_email) || _email == ""){
-        return false;
-    }else{
-        return true; 
+function checkCorreo(valor) {    
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
+            alert("La dirección de correo " + valor + " es correcta.");
+        } else {
+            alert("La dirección de correo es incorrecta.");
+        }
     }
     
-}
-module.exports = checkCorreo;
+module.exports = checkCorreo(valor);
 
 
 /*.......  ALEX  ...... */ 
