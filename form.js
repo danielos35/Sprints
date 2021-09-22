@@ -1,4 +1,14 @@
 /*......... MICHAEL ...... */ 
+function checkNombre(valor){
+    const name=document.getElementById(valor.id).value();
+    const regex= /[0-9]/;
+    if(name.length<4 || name.length>30 || regex.test(name) || name==""){
+        return false;
+    }else{
+        return true;
+    }
+}
+module.exports= checkNombre();
 
 /*......... DANIEL  ...... */ 
 
@@ -23,13 +33,8 @@ function checkApellido(name){
     }
      
 } 
-
 // Exportar la función para la calificación del bot.
 module.exports = checkApellido(apellido);
-
-
-
-
 
 /*....... DAVID  ...... */ 
 
