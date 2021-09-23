@@ -1,4 +1,5 @@
 /*......... MICHAEL ...... */ 
+/*...Validacion del campo Nombre...*/
 function checkNombre(valor){
     const name=document.getElementById(valor.id).value();
     const regex= /[0-9]/;
@@ -25,7 +26,7 @@ function checkApellido(name){
     const regex = /[0-9]/;
 
     // NombreVariable.Length = Devuelve la cantidad de caracteres
-    // NombreVariable.test(NombreVariable2) = Analiza si los datos en NombreVariable2 se encuentran en NombreVariable1
+    // NombreVariable1.test(NombreVariable2) = Analiza si los datos en NombreVariable1 se encuentran en NombreVariable2
     if (name.length < 4 || name.length >30 || regex.test(name) || name == ""){
         return false;
     }else{
