@@ -60,20 +60,14 @@ module.exports = checkTelefono();
 
 /*....... JUAN F ...... */ 
 
-checkCorreo(valor);
-document.getElementById('correo').addEventListener('input', function() {
-    var event = Event.target;
-    valido = document.getElementById('correoOK');
-        
-    emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-
-    if (emailRegex.test(campo.value)) {
-        valido.innerText = "válido";
+function checkCorreo(valor) {
+    if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(valor)){
+    alert("La dirección de email " + valor + " es correcta!.");
     } else {
-        valido.innerText = "incorrecto";
+    alert("La dirección de email es incorrecta!.");
     }
-    });
-    module.exports = checkCorreo;
+}
+    module.exports = checkCorreo();
 
 
 /*.......  ALEX  ...... */ 
