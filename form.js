@@ -58,7 +58,24 @@ function checkTelefono(telefono)
    module.exports = checkTelefono;
 
 /*....... JUAN F ...... */ 
-// prueba
+
+let correo = document.getElementById("Correo");
+
+function checkCorreo(valor) {    
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
+            alert("La dirección de correo electronico " + valor + " es correcta.");
+        } 
+        else {
+            alert("La dirección de correo electronico es incorrecta.");
+        }
+        if ($('#txtcorreo').text() == "") {
+            alert('Por favor ingrese un correo electronico valido');
+            return false;
+        }
+    }
+    
+module.exports = checkCorreo(valor);
+
 
 /*.......  ALEX  ...... */ 
 // Validación el cumplimiento de las políticas para el campo contraseña.
