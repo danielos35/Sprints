@@ -32,7 +32,7 @@ function checkApellido(name){
     }else{
         return true; 
     }
-     
+    
 } 
 // Exportar la función para la calificación del bot.
 module.exports = checkApellido(apellido);
@@ -40,48 +40,46 @@ module.exports = checkApellido(apellido);
 /*....... DAVID  ...... */ 
 // Función que recibe como argumento el telefono
 function checkTelefono(telefono)
-   {
+{
          //valores numericos aceptados
-   	  var valoresok = /^[0-9]+$/;
+    var valoresok = /^[0-9]+$/;
         //compara el contenido de telefono y su longitud
-   	  if (telefono.value.match(valoresok) && telefono.value.length === 7 ) 
-         {
-   	  	    alert("Gracias por registrarte");
-	   	    return true;
+    if (telefono.value.match(valoresok) && telefono.value.length === 7 ) 
+        {
+        alert("Gracias por registrarte");
+        return true;
         }
-   	  else
-         {
-   	  	    alert("Introduzca un número válido");
-   	  	    return false;
-   	    }
-   }
+    else
+        {
+        alert("Introduzca un número válido");
+    return false;
+        }
+}
    //exporta la función
-   module.exports = checkTelefono();
+module.exports = checkTelefono();
 
 /*....... JUAN F ...... */ 
 
-let correo = document.getElementById("Correo");
+checkCorreo(valor);
+document.getElementById('correo').addEventListener('input', function() {
+    var event = Event.target;
+    valido = document.getElementById('correoOK');
+        
+    emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
-function checkCorreo(valor) {    
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
-            alert("La dirección de correo electronico " + valor + " es correcta.");
-        } 
-        else {
-            alert("La dirección de correo electronico es incorrecta.");
-        }
-        if ($('#txtcorreo').text() == "") {
-            alert('Por favor ingrese un correo electronico valido');
-            return false;
-        }
+    if (emailRegex.test(campo.value)) {
+        valido.innerText = "válido";
+    } else {
+        valido.innerText = "incorrecto";
     }
-    
-module.exports = checkCorreo(valor);
+    });
+    module.exports = checkCorreo;
 
 
 /*.......  ALEX  ...... */ 
 // Validación el cumplimiento de las políticas para el campo contraseña.
 
-var p1 = document.getElementById("passwd").value;
+var p1 = document.getElementById("passwd").value; 
 var p2 = document.getElementById("passwd2").value;
 function checkContrasena ( pswd){
 var p1 = document.getElementById("passwd").value;
