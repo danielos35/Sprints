@@ -14,17 +14,14 @@ module.exports= checkNombre();
 /*......... DANIEL  ...... */ 
 
 // Importar Id desde HTML.
-let apellido = document.getElementById("Apellido");
-
-function checkApellido(name){
+function checkApellido(){
 
     //Acceder al dato dentro de la variable
-    name = name.value; 
+    let name = document.getElementById("apellidos").value; 
 
     // regex contiene un intervalo de numeros del 0-9: /[0-9]/.
     //Si se necesita omitir letras, se pueden crear intervalos alfabeticos /[a-z]/ minusculas /[A-Z]/ MAYUSCULAS
     const regex = /[0-9]/;
-
     // NombreVariable.Length = Devuelve la cantidad de caracteres
     // NombreVariable1.test(NombreVariable2) = Analiza si los datos en NombreVariable1 se encuentran en NombreVariable2
     if (name.length < 4 || name.length >30 || regex.test(name) || name == ""){
@@ -35,7 +32,7 @@ function checkApellido(name){
     
 } 
 // Exportar la función para la calificación del bot.
-module.exports = checkApellido(apellido);
+module.exports = checkApellido;
 
 /*....... DAVID  ...... */ 
 // Función que recibe como argumento el telefono
