@@ -110,9 +110,6 @@ if (p1.length == 0 || p2.length == 0) {
     return false;
   }
 
-
-
-
 }
 
 //exporta las funciones
