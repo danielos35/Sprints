@@ -1,14 +1,15 @@
 /*......... MICHAEL ...... */ 
 /*...Validacion del campo Nombre...*/
 function checkNombre(valor){
-    const nombre=document.getElementById("nombre").value;
+    const name=document.getElementById(valor.id).value();
     const regex= /[0-9]/;
-    if(nombre.length<4 || nombre.length>30 || regex.test(nombre) || nombre==""){
+    if(name.length<4 || name.length>30 || regex.test(name) || name==""){
         return false;
     }else{
         return true;
     }
 }
+module.exports= checkNombre();
 
 /*......... DANIEL  ...... */ 
 
@@ -49,7 +50,7 @@ function checkTelefono(valor) {
       	  	return true;
 		}
    	  else{
-			return false;
+			 return false;
         }
 }
 
@@ -110,9 +111,12 @@ if (p1.length == 0 || p2.length == 0) {
     return false;
   }
 
+
+
+
 }
 
 //exporta las funciones
 module.exports = {
-	checkTelefono,checkNombre
+	checkTelefono
 }
