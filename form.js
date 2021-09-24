@@ -66,53 +66,18 @@ function checkCorreo(valor) {
 
 /*.......  ALEX  ...... */ 
 // Validación el cumplimiento de las políticas para el campo contraseña.
+function checkContrasena(valor){
+    const contrasena=document.getElementById("password").value;
+    const contrasenaRegex= /^(?=.*\d)(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ]/;
+    /*...Con Caracteres Especiales...*/
+    /*const ContrasenaRegex = /^(?=.*\d)(?=.*[a-záéíóúüñ])(?=.*[A-ZÁÉÍÓÚÜÑ])(?=.*[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/*/
+    if(contrasenaRegex.test(contrasena) && contrasena.length>=8){
+        return true;
 
-var p1 = document.getElementById("passwd").value; 
-var p2 = document.getElementById("passwd2").value;
-function checkContrasena ( pswd){
-var p1 = document.getElementById("passwd").value;
-var p2 = document.getElementById("passwd2").value;
-// 1. Por lo menos una letra mayúscula
-if ( password.match(/[A-Z]/) ) {
-    $('#capital').removeClass('invalid').addClass('valid');
-} else {
-    $('#capital').removeClass('valid').addClass('invalid');
+    }else{
+        return false;
+    }
 }
-// 2. Por lo menos una minúscula
-if ( password.match(/[a-z]/) ) {
-    $('#capital').removeClass('invalid').addClass('valid');
-} else {
-    $('#capital').removeClass('valid').addClass('invalid');
-}
-// 3. Por lo menos un número 
-if ( password.match(/\d/) ) {
-    $('#number').removeClass('invalid').addClass('valid');
-} 
-else {
-    $('#number').removeClass('valid').addClass('invalid');
-}
-   
-if (espacios) {
-  alert ("La contraseña no puede contener espacios en blanco");
-  return false;
-}
-// 4. longitud mayor o igual a 8 dígitos. 
-if (p1.length < 8 || p2.length < 8) {
-    alert("La longitud de la contraseña debe sder mayor o igual a 8 dígitos");
-    return false;
-  }
-
-// 5. Campo es obligatorio, no sepuede dejar vacío.
-if (p1.length == 0 || p2.length == 0) {
-    alert("Los campos de la password no pueden quedar vacios");
-    return false;
-  }
-
-
-
-
-}
-
 //exporta las funciones
 module.exports = {
     checkApellido,checkTelefono
