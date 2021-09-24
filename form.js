@@ -1,7 +1,7 @@
 /*......... MICHAEL ...... */ 
 /*...Validacion del campo Nombre...*/
-function checkNombre(){
-    const name=document.getElementById("nombre").value();
+function checkNombre(valor){
+    const name=document.getElementById(valor.id).value();
     const regex= /[0-9]/;
     if(name.length<4 || name.length>30 || regex.test(name) || name==""){
         return false;
@@ -47,7 +47,7 @@ function checkTelefono(valor) {
       	  	return true;
 		}
    	  else{
-			return false;
+			 return false;
         }
 }
 
