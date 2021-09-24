@@ -31,8 +31,8 @@ function checkApellido(){
     }
     
 } 
-// Exportar la función para la calificación del bot.
-module.exports = checkApellido;
+// Exportar la función para la calificación del bot (Se hace al final de todas la funciones)
+
 
 /*....... DAVID  ...... */ 
 // Función que recibe como argumento el telefono
@@ -115,5 +115,5 @@ if (p1.length == 0 || p2.length == 0) {
 
 //exporta las funciones
 module.exports = {
-	checkTelefono
+    checkApellido,checkTelefono
 }
