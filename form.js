@@ -9,7 +9,6 @@ function checkNombre(){
         return true;
     }
 }
-module.exports= checkNombre;
 
 /*......... DANIEL  ...... */ 
 
@@ -54,19 +53,22 @@ function checkTelefono(valor) {
 
 /*....... JUAN F ...... */ 
 
-function checkCorreo(valor) {
-    if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(valor)){
-    alert("La dirección de email " + valor + " es correcta!.");
+function checkCorreo() {
+    const correo=document.getElementById("correo").value;
+    const emailRegex= /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    /*....Todo tipo de caracteres...*/
+    /*emailRegex =/^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i*/ 
+
+    if (emailRegex.test(correo)){
+        return true;
     } else {
-    alert("La dirección de email es incorrecta!.");
+        return false
     }
 }
-    module.exports = checkCorreo();
-
 
 /*.......  ALEX  ...... */ 
 // Validación el cumplimiento de las políticas para el campo contraseña.
-function checkContrasena(valor){
+function checkContrasena(){
     const contrasena=document.getElementById("password").value;
     const contrasenaRegex= /^(?=.*\d)(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ]/;
     /*...Con Caracteres Especiales...*/
@@ -80,5 +82,5 @@ function checkContrasena(valor){
 }
 //exporta las funciones
 module.exports = {
-    checkApellido,checkTelefono
+    checkNombre,checkApellido,checkTelefono,checkCorreo,checkContrasena
 }
