@@ -3,10 +3,10 @@
 
 
 
-/*.........Desarrolador1-Desarrollador2 ...... */ 
+/*.........Daniel-David ...... */ 
 // Función Ordenar Registro
 
 
 
-/*......... Michael-Desarrollador4-Desarrollador5...... */ 
+/*......... Michael-Alex-JuanF...... */ 
 // Función Filtar Correo
