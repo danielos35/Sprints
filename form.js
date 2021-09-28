@@ -14,10 +14,8 @@ function checkNombre(){
 
 // Importar Id desde HTML.
 function checkApellido(){
-
     //Acceder al dato dentro de la variable
     let name = document.getElementById("apellidos").value; 
-
     // regex contiene un intervalo de numeros del 0-9: /[0-9]/.
     //Si se necesita omitir letras, se pueden crear intervalos alfabeticos /[a-z]/ minusculas /[A-Z]/ MAYUSCULAS
     const regex = /[0-9]/;
@@ -27,16 +25,11 @@ function checkApellido(){
         return false;
     }else{
         return true; 
-    }
-    
+    }   
 } 
 // Exportar la función para la calificación del bot (Se hace al final de todas la funciones)
-
-
 /*....... DAVID  ...... */ 
 // Función que recibe como argumento el telefono
-
-
 function checkTelefono(valor) {      
 	//valores numericos aceptados
       var telefono = document.getElementById("telefono").value;
@@ -49,10 +42,7 @@ function checkTelefono(valor) {
 			 return false;
         }
 }
-
-
 /*....... JUAN F ...... */ 
-
 function checkCorreo() {
     const correo=document.getElementById("correo").value;
     const emailRegex= /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -65,7 +55,6 @@ function checkCorreo() {
         return false
     }
 }
-
 /*.......  ALEX  ...... */ 
 // Validación el cumplimiento de las políticas para el campo contraseña.
 function checkContrasena(){
