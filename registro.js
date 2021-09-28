@@ -1,10 +1,13 @@
 /*......... Team ...... */ 
 // Función Agregar Registro
 let Registros=[]
-console.log(Registros)
-function agregarRegistro(a,b,c,d,e) {      
-	//valores numericos aceptados
-  Registros.push([a,b,c,d,e]);
+function agregarRegistro() {
+    const name=document.getElementById("nombre").value; 
+    const apellidos = document.getElementById("apellidos").value;  
+    const telefono = document.getElementById("telefono").value; 
+    const correo=document.getElementById("correo").value; 
+    const contrasena=document.getElementById("password").value; 
+    Registros.push([name,apellidos,telefono,correo,contrasena]);
 }
 
 
@@ -15,3 +18,9 @@ function agregarRegistro(a,b,c,d,e) {
 
 /*......... Michael-Alex-JuanF...... */ 
 // Función Filtar Correo
+
+
+//Exportar Funciones
+module.exports={
+    agregarRegistro
+}
