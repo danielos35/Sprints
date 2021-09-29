@@ -23,4 +23,4 @@ function filtrarCorreo(arreglo){
 
 
 
-module.exports = agregarRegistro;filtrarCorreo
+module.exports = {agregarRegistro,filtrarCorreo}
