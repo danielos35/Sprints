@@ -1,3 +1,10 @@
+/*....... DAVID  ...... */ 
+
+
+/*......... DANIEL  ...... */ 
+
+
+/*.......  ALEX  ...... */ 
 const { agregarRegistro } = require("./form");
 
 
@@ -20,6 +27,13 @@ function filtrarCorreo(arreglo){
     
     return resultado 
 }
+
+/*....... JUAN F ...... */ 
+
+
+/*......... MICHAEL ...... */ 
+
+
 
 
 
