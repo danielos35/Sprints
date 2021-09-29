@@ -66,6 +66,7 @@ let arreglo = []
 function agregarRegistro(){
 
     arreglo.push(document.getElementById("Apellidos").value);
+    console.log('Su apellido es:' + value); /*prueba.
 
 }
 /*.......  GRUPO 1  ...... */ 
