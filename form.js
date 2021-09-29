@@ -93,5 +93,6 @@ function filtrarCorreo(){
 
 
 module.exports = {
-    checkNombre,checkApellido,checkTelefono,checkCorreo,checkContrasena
+    checkNombre,checkApellido,checkTelefono,checkCorreo,checkContrasena, agregarRegistro, filtrarCorreo
+    }
 }
