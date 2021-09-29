@@ -61,10 +61,33 @@ function checkContrasena(){
 /*.......  GENERAL  ...... */ 
 
 
+let arreglo = []
+
+function agregarRegistro(){
+
+    arreglo.push(document.getElementById("Apellidos").value);
+
+}
 /*.......  GRUPO 1  ...... */ 
 
 
 /*.......  GRUPO 2  ...... */ 
+
+function filtrarCorreo(){
+
+    let gmail = /gmail.com/
+
+    for (let i = 0; i<arreglo.length; i= i+1){
+
+        if(gmail.test(arreglo[i])){
+            console.log(arreglo[i]);
+        }
+        else{
+        continue
+        }
+        
+    }
+}
 
 
 
