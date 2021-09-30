@@ -5,6 +5,7 @@
 
 
 /*.......  ALEX  ...... */ 
+// Función Agregar Registro
 const { agregarRegistro } = require("./form");
 console.log("Hola Mundo");
 
@@ -23,6 +24,7 @@ function agregarRegistro(){
     return registros
 
 }
+// Función Filtar Correo
 function filtrarCorreo(arreglo){
     let filtro = "gmail.com";
     let filtroRegexp = RegExp(filtro);
@@ -31,10 +33,7 @@ function filtrarCorreo(arreglo){
     return resultado 
 }
 
-/*....... JUAN F ...... */ 
 
-
-/*......... MICHAEL ...... */ 
 
 
 
