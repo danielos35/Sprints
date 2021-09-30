@@ -4,7 +4,7 @@
 /*......... DANIEL  ...... */ 
 
 
-/*.......  ALEX  ...... */ 
+/*.......  GRUPO 2  ...... */ 
 // const { agregarRegistro } = require("./form");
 // console.log("Hola Mundo");
 
