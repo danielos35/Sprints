@@ -16,15 +16,17 @@ function agregarRegistro(){
     let telefono = document.getElementById("telefono").value;
     let correo = document.getElementById("correo").value;
     let password = document.getElementById("password").value;
-    
-    let registro = {Nombre: nombre, Apellidos: apellidos, Teléfono: telefono, Correo: correo,  Contraseña: password};
-    var arreglo = arreglo.push(registro);
-    console.log("Los datos ingresados son:" <br> "Nombre: " + nombre <br> + "Apellidos: " + apellidos <br> + "Teléfono: " + telefono <br> + 
-    "Correo: " + correo <br> + "Contraseña: " + password);
+    var registros = new Array();
+    let usuario = {Nombre: nombre, Apellidos: apellidos, Teléfono: telefono, Correo: correo,  Contraseña: password};
+    registros.push(usuario);
+    console.log(usuario);
+    return registros
 
 }
 function filtrarCorreo(arreglo){
-    resultado = arreglo.filter(resultado => /gmail.com/.test(arreglo.Correo) === true);
+    let filtro = "gmail.com";
+    let filtroRegexp = RegExp(filtro);
+    resultado = arreglo.filter(arreglo => filtroRegexp.test(arreglo.Correo) === true);
     
     return resultado 
 }
