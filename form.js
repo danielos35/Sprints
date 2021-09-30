@@ -2,6 +2,7 @@
 
 /*...Validacion del campo Nombre...*/
 
+
 function checkNombre(){
     const name=document.getElementById("nombre").value;
     const regex= /[0-9]/;
@@ -29,7 +30,6 @@ function checkApellido(){
    
     let name = document.getElementById("apellidos").value; 
     const regex = /[0-9]/;
-
     if (name.length < 4 || name.length >30 || regex.test(name) || name == ""){
         return false;
     }else{
@@ -45,13 +45,13 @@ function checkTelefono(valor) {
       var telefono = document.getElementById("telefono").value;
    	  var valoresok = /^[0-9]+$/;
         //compara el contenido de telefono y su longitud
+
 }
 /*....... DAVID  ...... */ 
 function checkTelefono(valor) {      
 	
       var telefono = document.getElementById("telefono").value;
    	  var valoresok = /^[0-9]+$/;
-
    	  if (telefono.match(valoresok) && telefono.length === 7) {
       	  	return true;
 		}
@@ -60,10 +60,8 @@ function checkTelefono(valor) {
         }
 }
 
-
-
 /*....... JUAN F ...... */ 
-function checkCorreo(){
+function checkCorreo() {
     const correo=document.getElementById("correo").value;
     const emailRegex= /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
@@ -72,7 +70,8 @@ function checkCorreo(){
 
     if (emailRegex.test(correo)){
 
-    if (emailRegex.test(correo)){
+      if (emailRegex.test(correo)){
+
         return true;
     } else {
         return false
@@ -118,7 +117,7 @@ let arreglo = []
 function agregarRegistro(){
 
     arreglo.push(document.getElementById("Apellidos").value);
-    console.log('Su apellido es:' + value); /*prueba.
+    console.log('Su apellido es:' + value); 
 
 }
 /*.......  GRUPO 1  ...... */ 
@@ -146,5 +145,4 @@ function filtrarCorreo(){
 
 module.exports = {
     checkNombre,checkApellido,checkTelefono,checkCorreo,checkContrasena, agregarRegistro, filtrarCorreo
-    }
 }
