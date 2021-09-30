@@ -3,17 +3,10 @@
 
 
 
-/*.......  ALEX  ...... */ 
+
 // Función Agregar Registro
-const { agregarRegistro } = require("./form");
-console.log("Hola Mundo");
 /*.......  GRUPO 2  ...... */ 
-// const { agregarRegistro } = require("./form");
-// console.log("Hola Mundo");
-
-
 function agregarRegistro(){
-    
     let nombre = document.getElementById("nombre").value;
     let apellidos = document.getElementById("apellidos").value;
     let telefono = document.getElementById("telefono").value;
@@ -34,11 +27,4 @@ function filtrarCorreo(arreglo){
     
     return resultado 
 }
-
-
-
-
-
-
-
 module.exports = {agregarRegistro,filtrarCorreo}
