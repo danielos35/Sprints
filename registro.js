@@ -5,8 +5,8 @@
 
 
 /*.......  ALEX  ...... */ 
-const { agregarRegistro } = require("./form");
-console.log("Hola Mundo");
+// const { agregarRegistro } = require("./form");
+// console.log("Hola Mundo");
 
 
 function agregarRegistro(){
