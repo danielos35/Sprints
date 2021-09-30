@@ -1,5 +1,23 @@
 /*....... GRUPO 1  ...... */ 
 
+// Test
+
+registros = {}
+
+function ordenarArreglo(arreglo){
+    return arreglo.sort(function(a,b){
+        var last1 = a.Apellidos.toUpperCase();
+        var last2 = b.Apellidos.toUpperCase();
+        if (last1 < last2){
+            return-1;
+        }
+        if(last1 > last2){
+            return 1; 
+        }
+        return 0;
+    })
+}
+
 
 
 
@@ -27,4 +45,4 @@ function filtrarCorreo(arreglo){
     
     return resultado 
 }
-module.exports = {agregarRegistro,filtrarCorreo}
+module.exports = {agregarRegistro,ordenarArreglo,filtrarCorreo}
