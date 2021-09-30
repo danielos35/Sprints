@@ -8,6 +8,9 @@
 // Función Agregar Registro
 const { agregarRegistro } = require("./form");
 console.log("Hola Mundo");
+/*.......  GRUPO 2  ...... */ 
+// const { agregarRegistro } = require("./form");
+// console.log("Hola Mundo");
 
 
 function agregarRegistro(){
