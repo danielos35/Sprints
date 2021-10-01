@@ -27,8 +27,8 @@ function agregarRegistro() {
 // Funcion Ordenar Registro
 function ordenarArreglo(arreglo){
     return arreglo.sort(function(a,b){
-        var last1 = a.Apellidos.toUpperCase();
-        var last2 = b.Apellidos.toUpperCase();
+        var last1 = a.apellido.toUpperCase();
+        var last2 = b.apellido.toUpperCase();
         if (last1 < last2){
             return-1;
         }
