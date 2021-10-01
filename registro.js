@@ -42,7 +42,7 @@ function ordenarArreglo(arreglo){
 function filtrarCorreo(arreglo){
     let filtro = "gmail.com";
     let filtroRegexp = RegExp(filtro);
-    resultado = arreglo.filter(arreglo => filtroRegexp.test(arreglo.Correo) === true);
+    resultado = arreglo.filter(arreglo => filtroRegexp.test(arreglo.correo) === true);
     
     return resultado 
 }
